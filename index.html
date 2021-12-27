@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MUSICFLIX</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1> MUSICFLIX </h1>
+            
+        </header>
+        <main>
+            <div id = 'container'>
+                <div >
+                    <img id = 'photo' src = 'https://media.giphy.com/media/fnygJPppjXqapNATWX/giphy-downsized.gif' >
+                </div>
+                <div >
+                   <audio id = 'audio' src = 'music/02-one_direction-story_of_my_life.mp3' controls preload = 'none'> </audio>
+                   <input type = 'image' id = 'shuffle' onClick = "controller('s')" src = 'photos\shuffle.png' > 
+                </div>
+                <div id = 'controls'>
+                    <input type = 'image' id = 'first' onClick = "controller('d')" src = 'photos\previous-track.png' >
+                    <input type = 'image' id = 'second' onClick = "controller('i')" src = 'photos\next-button.png' > 
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Made with 😍 by JK</p>
+        </footer>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
